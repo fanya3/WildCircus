@@ -1,0 +1,167 @@
+<!-- Afin de valider ton code HTML, fais un copier-coller de ce dernier et rends-toi sur https://validator.w3.org/#validate_by_input. 
+Click sur l'onglet "Validate by Direct Input" et colle ton code HTML, click ensuite sur le bouton "Check", et tu verras ensuite (si tu en as) les erreurs HTML s'afficher plus bas.
+Tu peux jeter un oeil par ici pour en savoir un peu plus: https://www.243tech.com/valider-vos-codes-html-et-css-sur-validator-w3-org/ -->
+
+<!DOCTYPE html>
+<html  lang="fr">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Wild Circus FB</title>
+      <link href="./style.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" type="text/css" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+      <header>
+          <a href="./wild-circus.html"><img src="https://raw.githubusercontent.com/fanya3/WildCircus/master/logo-wild-circus.png" alt="logo wild circus" class="logo"></a>
+        <nav>
+          <ul>
+              <!-- TODO: Les liens du menu doivent nous emmener vers les sections correspondantes dans la page -->
+              <li><a href="#performances">Performances</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#prices">Prices</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      
+      <div class=main>
+          <h1>It's time to dream!</h1>
+          <img class="icon-stars-white" src="https://raw.githubusercontent.com/fanya3/WildCircus/master/3-stars-white.png" alt="3 stars icon">
+      </div>
+
+
+      <section id="performances">
+        <h2>Performances</h2>
+        <!-- TODO: En utilisant du css place ces trois performances ("lough", "dream, "marvel at") sur la même ligne en enlevant le point généré par la balise "li". Attention, utilise bien le css pour aligner les éléments, tu ne dois pas enlever les balises "li"-->
+        <ul>
+          <!-- performance 1 -->
+          <li>
+              
+              <h3><img class="icon-stars" src="https://raw.githubusercontent.com/fanya3/WildCircus/master/3-stars.png" alt="3 stars icon">Laugh</h3>
+              <p>As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
+          </li>
+          <!-- performance 2 -->
+          <li>
+              <h3><img class="icon-stars" src="https://raw.githubusercontent.com/fanya3/WildCircus/master/3-stars.png" alt="3 stars icon">Dream</h3>
+              <p>Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
+          </li>
+          <!-- performance 3 -->
+          <li>
+              <h3><img class="icon-stars" src="https://raw.githubusercontent.com/fanya3/WildCircus/master/3-stars.png" alt="3 stars icon">Marvel at</h3>
+              <p>Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
+          </li>
+        </ul>
+      </section>
+
+
+      <section id="about-us">
+        <!-- TODO: Cette section n'a pas encore été réalisée, tu as carte blanche pour nous montrer ta créativité -->
+        <h2>About Us</h2>
+        <div class="about-us">
+          <div id="slider">
+              <div class="slider-container">
+                <img src="https://raw.githubusercontent.com/fanya3/WildCircus/master/Tiger.jpg" alt="Joe and Kairo the tiger">
+                <img src="https://raw.githubusercontent.com/fanya3/WildCircus/master/Fire-eaters.jpg" alt="Gemma and Viktor, the fire-eaters" >
+                <img src="https://raw.githubusercontent.com/fanya3/WildCircus/master/Clown.jpg" alt="Diego, the clown">
+                <img src="https://raw.githubusercontent.com/fanya3/WildCircus/master/Fire-circle.jpg" alt="Emma, the fire acrobat">
+                <img src="https://raw.githubusercontent.com/fanya3/WildCircus/master/Tiger.jpg" alt="Joe and Kairo the tiger">
+              </div>
+          </div>
+          <div class="our-story">
+            <p><span class="big-text">Who are we ?</span><br>We are a contemporary circus company, born in 1995 in the south of England. Even if we do shows that include animals, most of our performances are influenced by other art forms such as theater, dance, visual arts, music and street arts.<br>
+            <br>
+            <span class="big-text">Meet our artists !</span><br>Brave enough to face Kairo?? Or maybe you're ready to test you're fire resistance with our super hot couple Gemma and Viktor? If so, it will be our pleasure to welcome you very soon! We will bring you into an unique one night-time experience, where arts, circus and dance sublime each others. And be aware of Diego! If he has the opportunity, he won't hesitate to play a trick on you! </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="prices">
+        <h2>Prices</h2>
+        <!-- TODO:  Réalise un tableau qui présente les différents prix. Exemple (aggrandis la fenêtre en largeur pour bien voir l'exemple ci-dessous) :
+
+                                  | Adultes | Enfants de moins de 12 ans | Groupes (plus de 10 personnes) | Ecoles
+          Semaines hors mercredi  |         |                            |                                |
+          week-end et mercredi    |         |                            |                                |
+        -->
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Adults</th>
+              <th>Children <span class="small-text">(under 12 y/o)</span></th>
+              <th>Groups <span class="small-text">(10 or more)</span></th>
+              <th>Schools</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Weekdays <span class="small-text">excluding</span> Wednesday</th>
+              <td>18 $</td>
+              <td>9 $</td>
+              <td>12 $</td>
+              <td>9 $</td>
+            </tr>
+            <tr>
+              <th>Wednesday & Week-Ends</th>
+              <td>25 $</td>
+              <td>12 $</td>
+              <td>15 $</td>
+              <td>12 $</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      
+      <section id="contact">
+        <div class="line"></div><h2>Contact Us</h2><div class="line"></div>
+        <!-- TODO: Réalise un formulaire de contact avec les champs email et message plus un bouton pour envoyer le message. Pense bien à ajouter les labels pour les différents champs
+          Ce formulaire n'a pas besoin d'être fonctionnel, réalise juste la mise en forme.
+        -->
+        <form action="formulaire.html" method="POST">
+            <div class="label">
+                <label for="nom">your name<sup>*</sup></label><br>
+                <input type="text" required id="nom" name="nom" placeholder="Full Name">
+            </div>
+            <div class="label">
+                <label for="email">your email<sup>*</sup></label><br>
+                <input type="email" required id="email" name="email" placeholder="email@example.com">
+            </div>
+            <div class="label">
+                <label for="commentaires">your questions<sup>*</sup></label>
+                <br>
+                <textarea name="commentaires" id="commentaires" cols="38" rows="10" placeholder="any question?? Don't hesitate to ask us!"></textarea>
+            </div>
+            <div class="label">
+                <input type="submit" value="Confirm">
+                <input type="reset" value="Erase">
+            </div>
+            <p><sup>*</sup>These fields must be filled.</p>
+        </form>
+      </section>
+
+      
+      <footer>
+        <!-- TODO: Entre ton nom et prénom.
+          Mets en place un lien vers le site de la Wild Code School (https://wildcodeschool.fr) ainsi que le lien vers ton profil public France.ioi (avec les 16 premiers exercies de réalisés).
+          Tu peux egalement mettre un lien sur ton nom vers ton site, ton blog ou ton profil github ou linkedin, si tu en a un.
+        -->
+        <div>
+          <p class="signature">Wild Circus by Fanny Bouffier</p>
+          <p class="signature">15-06-2019</p> 
+        </div>
+        <div class="logos-footer">
+          <a href="http://www.france-ioi.org/user/perso.php?sLogin=fanya3" target="_blank"><img src="https://raw.githubusercontent.com/fanya3/WildCircus/master/logo-IOI.png" alt="logo France IOI"></a>
+          <a href="https://www.codecademy.com/fr/fanya3" target="_blank"><img src="https://raw.githubusercontent.com/fanya3/WildCircus/master/logo-codecademy.png" alt="logo Codecademy"></a>
+          <a href="https://www.sololearn.com/Profile/13832301" target="_blank"><img src="https://raw.githubusercontent.com/fanya3/WildCircus/master/logo-sololearn.png" alt="logo Sololearn"></a>
+          <a href="https://wildcodeschool.fr" target="_blank"><img src="https://raw.githubusercontent.com/fanya3/WildCircus/master/logo-wild.png" alt="logo Wild Code School France"></a>
+        </div>
+      </footer>
+  </body>
+
+</html>
